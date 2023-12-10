@@ -6,13 +6,13 @@ import './TodoList.css';
 const TodoList = () => {
   const [todos, setTodos] = useState([]);
 
-    useEffect(() => {
-      const randomShade = () => Math.floor(Math.random() * 76) + 150;
-      const grayValue = randomShade();
-      const randomGrayColor = `rgb(${grayValue}, ${grayValue}, ${grayValue})`;
+  useEffect(() => {
+    const randomShade = () => Math.floor(Math.random() * 51);
+    const grayValue = randomShade() + 50;
+    const randomGrayColor = `rgb(${grayValue}, ${grayValue}, ${grayValue})`;
   
-      document.body.style.backgroundColor = randomGrayColor;
-    }, [todos]);
+    document.documentElement.style.backgroundColor = randomGrayColor;
+  }, [todos]);
 
   const handleAddTodo = (newTodo) => {
     setTodos([...todos, newTodo]);

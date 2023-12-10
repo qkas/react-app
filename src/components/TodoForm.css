@@ -1,21 +1,17 @@
-.input {
-  width: 100%;
-}
-
 .input input {
-  max-width: 250px;
   padding: 8px;
   margin-bottom: 10px;
   border-radius: 4px;
-  border: 1px solid #ccc;
+  border: 1px solid #fff;
 }
 
 .input button {
   padding: 8px 15px;
   border: none;
   border-radius: 4px;
+  border: 1px solid #9a4ef1;
   cursor: pointer;
-  background-color: #9457da;
+  background-color: #9a4ef1;
   color: #fff;
   margin-left: 10px;
   width: 80px;

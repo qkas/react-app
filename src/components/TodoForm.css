@@ -1,0 +1,22 @@
+.input {
+
+}
+
+.input input {
+  width: 250px;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.input button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #9457da;
+  color: #fff;
+  margin-left: 10px;
+  width: 80px;
+}

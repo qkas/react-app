@@ -16,12 +16,12 @@ const TodoForm = ({ onAddTodo }) => {
   };
 
   return (
-    <div>
+    <div className="input">
       <input
         type="text"
         value={inputValue}
         onChange={handleInputChange}
-        placeholder="Enter a new todo"
+        placeholder="New task"
       />
       <button onClick={handleAddTodo}>Add</button>
     </div>

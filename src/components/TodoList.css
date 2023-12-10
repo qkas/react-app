@@ -1,0 +1,27 @@
+h1 {
+  font-size: 42px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 8px 0;
+}
+
+button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #9457da;
+  color: #fff;
+  margin-left: 10px;
+  width: 80px;
+}

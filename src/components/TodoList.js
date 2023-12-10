@@ -1,10 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import TodoForm from './TodoForm';
 import TodoItem from './TodoItem';
 import './TodoList.css';
 
 const TodoList = () => {
   const [todos, setTodos] = useState([]);
+
+    useEffect(() => {
+      const randomShade = () => Math.floor(Math.random() * 76) + 150;
+      const grayValue = randomShade();
+      const randomGrayColor = `rgb(${grayValue}, ${grayValue}, ${grayValue})`;
+  
+      document.body.style.backgroundColor = randomGrayColor;
+    }, [todos]);
 
   const handleAddTodo = (newTodo) => {
     setTodos([...todos, newTodo]);
@@ -17,7 +25,7 @@ const TodoList = () => {
 
   return (
     <div>
-      <h1>Todo List</h1>
+      <h1>To-Do List</h1>
       <TodoForm onAddTodo={handleAddTodo} />
       <ul>
         {todos.map((todo, index) => (
